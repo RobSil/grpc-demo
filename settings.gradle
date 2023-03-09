@@ -1,0 +1,6 @@
+rootProject.name = 'grpcdemo'
+
+
+include 'greeting-service'
+include 'greeting-client'
+include 'proto-service'
