@@ -1,0 +1,16 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      routes:
+        - id: greeting-client
+          uri: lb://greeting-client
+          predicates:
+            - Path=/greetings/**
+
+
